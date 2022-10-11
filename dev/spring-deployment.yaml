@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
         - name: spring-argocd-demo
-          # image: sumitgupta28/ocp-demo-app-kafka:latest
           image: asadiqbal6019/java-demo-app:main-c79696c
           ports:
             - containerPort: 8080
