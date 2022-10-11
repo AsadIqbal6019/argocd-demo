@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: spring-argocd-demo
-          image: asadiqbal6019/java-demo-app:main-c79696c
+          image: asadiqbal6019/java-demo-app:main-33b5aad
           ports:
             - containerPort: 8080
