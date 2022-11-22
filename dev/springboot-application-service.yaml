@@ -4,10 +4,11 @@ metadata:
   name: springboot-app-frontend
   namespace: myapp-demo
 spec:
-  type: LoadBalancer
+   type: NodePort
   selector:
-    app: springboot-app-demo
+    app: spring-argocd-demo
   ports:
-    - name: http
-      port: 8081
-      targetPort: 8080
+    - protocol: TCP
+      port: 8080
+      nodePort: 30000
+      name: http
